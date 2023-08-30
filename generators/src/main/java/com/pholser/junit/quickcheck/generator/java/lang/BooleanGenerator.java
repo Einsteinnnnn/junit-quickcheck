@@ -49,7 +49,10 @@ public class BooleanGenerator extends Generator<Boolean> {
         SourceOfRandomness random,
         GenerationStatus status) {
 
-        return random.nextBoolean();
+        // return random.nextBoolean();
+
+        float randomFloat = random.nextFloat(0.0f, 1.0f);
+        return randomFloat > 0.5f;
     }
 
     @Override public List<Boolean> doShrink(
