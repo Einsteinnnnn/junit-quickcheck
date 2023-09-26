@@ -73,9 +73,7 @@ public class ByteGenerator extends IntegralGenerator<Byte> {
         SourceOfRandomness random,
         GenerationStatus status) {
 
-        // return random.nextByte(min, max);
         float randomFloat = random.nextFloat(0.0f, 1.0f);
-
         return (byte) (randomFloat * 255);
     }
 
